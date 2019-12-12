@@ -1,0 +1,12 @@
+Approach: Let us check every 3 x 3 subgrid individually. For each grid, all numbers must be unique and between (1 and 9) also every rows, columns, and both diagonals must have the equal sum.
+
+Also notice the fact that a subgrid is a Magic Square if its middle element is 5. Because adding the 12 values from the four lines that crosses the center, add up to 60, but they also add up to the entire grid (45), plus 3 times the middle value. This implies the middle value is 5. Hence we can check this condition which help us skip over various subgrids.
+
+You can learn more about Magic_square here or here.
+
+The procedure to check for a subgrid to be a Magic Square is as follows:
+
+The middle element must be 5.
+The sum of the grid must be 45, and contains all distinct values from 1 to 9.
+Each horizontal(row) and vertical(column) must add up to 15.
+Both of the diagonal lines must also sum to 15.
