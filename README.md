@@ -1,0 +1,1 @@
+# count-magic-squares-in-a-grid
